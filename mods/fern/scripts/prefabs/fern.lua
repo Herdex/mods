@@ -12,9 +12,6 @@ TUNING.FERN_SANITY = 200
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.FERN = {
 	"flint",
-	"flint",
-	"twigs",
-	"twigs",
 }
 
 local start_inv = {}
