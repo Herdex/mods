@@ -1,5 +1,5 @@
 -- This information tells other players more about the mod
-name = "Extended Sample Character"
+name = "Fern"
 description = "A character template for Don't Starve Together."
 author = "Dragon Wolf Leo"
 version = "1.2.6" -- This is the version of the template. Change it to your own number.

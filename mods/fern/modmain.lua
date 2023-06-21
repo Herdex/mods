@@ -51,8 +51,8 @@ STRINGS.CHARACTER_SURVIVABILITY.fern = "Slim"
 STRINGS.CHARACTERS.FERN = require "speech_fern"
 
 -- The character's name as appears in-game 
-STRINGS.NAMES.FERN = "Perry"
-STRINGS.SKIN_NAMES.fern_none = "Perry"
+STRINGS.NAMES.FERN = "Fern"
+STRINGS.SKIN_NAMES.fern_none = "Fern"
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes

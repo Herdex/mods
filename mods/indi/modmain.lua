@@ -42,7 +42,7 @@ local STRINGS = GLOBAL.STRINGS
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.indi = "The Sample Character"
-STRINGS.CHARACTER_NAMES.indi = "Perry"
+STRINGS.CHARACTER_NAMES.indi = "Indi"
 STRINGS.CHARACTER_DESCRIPTIONS.indi = "*Perk 1\n*Perk 2\n*Perk 3"
 STRINGS.CHARACTER_QUOTES.indi = "\"Quote\""
 STRINGS.CHARACTER_SURVIVABILITY.indi = "Slim"
@@ -51,8 +51,8 @@ STRINGS.CHARACTER_SURVIVABILITY.indi = "Slim"
 STRINGS.CHARACTERS.INDI = require "speech_indi"
 
 -- The character's name as appears in-game 
-STRINGS.NAMES.INDI = "Perry"
-STRINGS.SKIN_NAMES.indi_none = "Perry"
+STRINGS.NAMES.INDI = "Indi"
+STRINGS.SKIN_NAMES.indi_none = "Indi"
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
