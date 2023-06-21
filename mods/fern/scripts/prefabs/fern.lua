@@ -5,12 +5,12 @@ local assets = {
 }
 
 -- Your character's stats
-TUNING.PERRY_HEALTH = 200
-TUNING.PERRY_HUNGER = 200
-TUNING.PERRY_SANITY = 100
+TUNING.FERN_HEALTH = 200
+TUNING.FERN_HUNGER = 200
+TUNING.FERN_SANITY = 100
 
 -- Custom starting inventory
-TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.PERRY = {
+TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.FERN = {
 	"flint",
 	"flint",
 	"twigs",
@@ -19,19 +19,19 @@ TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.PERRY = {
 
 local start_inv = {}
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
-    start_inv[string.lower(k)] = v.PERRY
+    start_inv[string.lower(k)] = v.FERN
 end
 local prefabs = FlattenTree(start_inv, true)
 
 -- When the character is revived from human
 local function onbecamehuman(inst)
 	-- Set speed when not a ghost (optional)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "perry_speed_mod", 1)
+	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "fern_speed_mod", 1)
 end
 
 local function onbecameghost(inst)
 	-- Remove speed modifier when becoming a ghost
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "perry_speed_mod")
+   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "fern_speed_mod")
 end
 
 -- When loading or spawning the character
@@ -50,7 +50,7 @@ end
 -- This initializes for both the server and client. Tags can be added here.
 local common_postinit = function(inst) 
 	-- Minimap icon
-	inst.MiniMapEntity:SetIcon( "perry.tex" )
+	inst.MiniMapEntity:SetIcon( "fern.tex" )
 end
 
 -- This initializes for the server only. Components are added here.
@@ -65,9 +65,9 @@ local master_postinit = function(inst)
     --inst.talker_path_override = "dontstarve_DLC001/characters/"
 	
 	-- Stats	
-	inst.components.health:SetMaxHealth(TUNING.PERRY_HEALTH)
-	inst.components.hunger:SetMax(TUNING.PERRY_HUNGER)
-	inst.components.sanity:SetMax(TUNING.PERRY_SANITY)
+	inst.components.health:SetMaxHealth(TUNING.FERN_HEALTH)
+	inst.components.hunger:SetMax(TUNING.FERN_HUNGER)
+	inst.components.sanity:SetMax(TUNING.FERN_SANITY)
 	
 	-- Damage multiplier (optional)
     inst.components.combat.damagemultiplier = 1
@@ -80,4 +80,4 @@ local master_postinit = function(inst)
 	
 end
 
-return MakePlayerCharacter("perry", prefabs, assets, common_postinit, master_postinit, prefabs)
+return MakePlayerCharacter("fern", prefabs, assets, common_postinit, master_postinit, prefabs)
