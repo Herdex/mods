@@ -41,7 +41,7 @@ local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
 -- The character select screen lines
-STRINGS.CHARACTER_TITLES.indi = "The Sample Character"
+STRINGS.CHARACTER_TITLES.indi = "The Goober"
 STRINGS.CHARACTER_NAMES.indi = "Indi"
 STRINGS.CHARACTER_DESCRIPTIONS.indi = "*Perk 1\n*Perk 2\n*Perk 3"
 STRINGS.CHARACTER_QUOTES.indi = "\"Quote\""
@@ -67,4 +67,4 @@ local skin_modes = {
 }
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
-AddModCharacter("indi", "FEMALE", skin_modes)
+AddModCharacter("indi", "MALE", skin_modes)
