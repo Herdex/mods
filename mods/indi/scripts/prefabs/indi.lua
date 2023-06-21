@@ -5,8 +5,8 @@ local assets = {
 }
 
 -- Your character's stats
-TUNING.INDI_HEALTH = 200
-TUNING.INDI_HUNGER = 200
+TUNING.INDI_HEALTH = 150
+TUNING.INDI_HUNGER = 150
 TUNING.INDI_SANITY = 100
 
 -- Custom starting inventory

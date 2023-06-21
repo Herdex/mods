@@ -16,7 +16,7 @@ return CreatePrefabSkin("indi_none",
 	type = "base",
 	assets = assets,
 	skins = skins, 
-	skin_tags = {"PERRY", "CHARACTER", "BASE"},
+	skin_tags = {"INDI", "CHARACTER", "BASE"},
 	build_name_override = "indi",
 	rarity = "Character",
 })

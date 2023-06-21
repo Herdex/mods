@@ -543,7 +543,7 @@ return {
             ATTACKER = "%s looks shifty...",
             MURDERER = "Murderer!",
             REVIVER = "%s, friend of ghosts.",
-            GHOST = "%s could use a heart.",
+            GHOST = "Imagine dying, couldn't be me.",
             FIRESTARTER = "Burning that wasn't very scientific, %s.",
         },
         WILSON =
