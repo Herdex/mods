@@ -1,6 +1,6 @@
 -- This information tells other players more about the mod
 name = "Indi"
-description = "A character template for Don't Starve Together."
+description = "A Pepega Pal."
 author = "Dragon Wolf Leo"
 version = "1.2.6" -- This is the version of the template. Change it to your own number.
 
